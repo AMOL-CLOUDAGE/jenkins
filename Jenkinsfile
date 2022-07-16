@@ -14,12 +14,7 @@ pipeline {
         }
     }
     
-    stage('docker version') {
-        steps {
-            sh 'docker -v'
-        }
-    }
-    
+   
     stage('kubernetes version') {
         steps {
             withKubeConfig([credentialsId: 'config']) {
