@@ -2,15 +2,10 @@ pipeline {
     agent any
 
     stages {
-    stage('git version') {
-        steps {
-            sh 'git version'
+        stage('Hello') {
+            steps {
+                echo 'Hello Aishwarya'
+            }
         }
     }
-    
-    
-   
-    
-    }
-}
 }
