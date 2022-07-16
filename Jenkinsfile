@@ -8,11 +8,6 @@ pipeline {
         }
     }
     
-    stage('maven version') {
-        steps {
-            sh 'mvn -v'
-        }
-    }
     
    
     stage('kubernetes version') {
